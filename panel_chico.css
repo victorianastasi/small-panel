@@ -1,0 +1,71 @@
+.panel-sm, .panel-list-link, .panel-sm-horizontal {
+  outline: none;
+  background: transparent;
+}
+.panel-sm-horizontal {
+  flex-direction: row;
+}
+.panel-sm img, .panel-list-link img, .panel-sm-horizontal img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+.panel-sm-horizontal img {
+  aspect-ratio: 1/1;
+}
+.panel-sm .card-body, .panel-list-link .card-body, .panel-sm-horizontal .card-body {
+  padding: 0;
+}
+.panel-sm img + .card-body .card-title, .panel-list-link img + .card-body .card-title {
+  margin: 1.5rem 0 0 0;
+}
+.panel-sm-horizontal img + .card-body {
+  margin: 0 0 0 1.5rem;
+}
+.panel-sm .card-body .card-title, .panel-list-link .card-body .card-title, .panel-sm-horizontal .card-body .card-title {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.panel-sm .card-body .card-text, .panel-list-link .card-body .card-text, .panel-sm-horizontal .card-body .card-text {
+  margin: 0.25rem 0 0;
+}
+.panel-sm .panel-footer, .panel-list-link .panel-footer, .panel-sm-horizontal .panel-footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.panel-sm .panel-footer .card-link, .panel-list-link .panel-footer .card-link {
+  margin: 0;
+}
+.panel-sm .list-link, .panel-list-link .list-link {
+  margin-top: 1.5rem;
+}
+.panel-sm .list-link-item-title, .panel-list-link .list-link-item-title {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: -.5rem;
+}
+.panel-sm .list-link .btn, .panel-list-link .list-link .btn {
+  width: fit-content;
+}
+.panel-sm.bg-light, .panel-list-link.bg-light, .panel-sm.bg-white, .panel-list-link.bg-white {
+  padding: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .panel-sm-horizontal img+.card-body {
+    margin-left: 1rem;
+  }
+  .panel-sm img + .card-body .card-title, .panel-list-link img + .card-body .card-title {
+    margin: 1rem 0 0 0;
+  }
+  .panel-sm .panel-footer, .panel-list-link .panel-footer, .panel-sm-horizontal .panel-footer {
+    margin-top: 1rem;
+  }
+  .panel-sm .list-link, .panel-list-link .list-link {
+    margin-top: 1rem;
+  }
+}
